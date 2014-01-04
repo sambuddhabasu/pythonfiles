@@ -7,6 +7,9 @@ names = []
 marks = []
 credits = []
 global found
+print "THIS SCRIPT CALCULATES CGPA OF ALL STUDENTS FOR YEAR-I SEM-I OF IIIT-HYDERABAD"
+print "THE SCRIPT WAS WRITTEN BY SAMBUDDHA BASU"
+print "=============================================================================="
 for codeCtr in range(0,len(codes)):
 	code = codes[codeCtr]
 	for gradeCtr in range(0,len(grades)):
