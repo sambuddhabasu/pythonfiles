@@ -1,4 +1,4 @@
 pythonfiles
 ===========
 
-Small scripts written in python
+Scripts written using the Python programming language
