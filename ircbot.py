@@ -3,7 +3,7 @@
 import socket
 SERVER = 'irc.freenode.net'
 PORT = 6667
-CHANNEL = '#bookie'
+CHANNEL = '#randomchannel'
 BOTNICK = 'askbot'
 def ping():
     irc.send("PONG :pingis\n")
@@ -35,5 +35,7 @@ while 1:
 	sendmsg("The central bookie repo is at https://github.com/bookieio/Bookie")
     if msg.lower().find(":issue " + BOTNICK) != -1:
 	sendmsg("The open issues can be found at https://github.com/bookieio/Bookie/issues?state=open")
+    if msg.lower().find(":pr " + BOTNICK) != -1:
+	sendmsg("The pull requests can be found at https://github.com/bookieio/Bookie/pulls")
     if msg.find("PING :") != -1:
         ping()
