@@ -3,7 +3,7 @@
 import socket
 SERVER = 'irc.freenode.net'
 PORT = 6667
-CHANNEL = '#randomchannel'
+CHANNEL = '#bookie'
 BOTNICK = 'askbot'
 def ping():
     irc.send("PONG :pingis\n")
