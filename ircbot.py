@@ -33,5 +33,7 @@ while 1:
 	sendmsg("Our website is at https://bmark.us/")
     if msg.lower().find(":repo " + BOTNICK) != -1:
 	sendmsg("The central bookie repo is at https://github.com/bookieio/Bookie")
+    if msg.lower().find(":issue " + BOTNICK) != -1:
+	sendmsg("The open issues can be found at https://github.com/bookieio/Bookie/issues?state=open")
     if msg.find("PING :") != -1:
         ping()
